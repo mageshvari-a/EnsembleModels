@@ -9,7 +9,7 @@ import pandas as pd
 import joblib  
 
 # Load the trained Gradient Boosting model
-model = joblib.load("best_sales_model.pkl")
+model = joblib.load("gradient_boost_model.pkl")
 
 st.title("Cloth Company Sales Prediction App")
 
