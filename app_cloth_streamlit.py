@@ -9,7 +9,8 @@ import pandas as pd
 import joblib  
 
 # Load the trained Gradient Boosting model
-model = joblib.load("gradient_boost_model.pkl")
+with open("gradient_boost_model.pkl", "rb") as f:
+    model = pickle.load(f)
 
 st.title("Cloth Company Sales Prediction App")
 
